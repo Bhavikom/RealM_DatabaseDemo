@@ -17,7 +17,8 @@ public class App extends Application {
         super.onCreate();
         Realm.init(this);
 
-        final RealmConfiguration configuration = new RealmConfiguration.Builder().name("sample.realm").schemaVersion(2).migration(new RealmMigrations()).build();
+        /* increment schema version whenever change in database and want to upgrade it */
+        final RealmConfiguration configuration = new RealmConfiguration.Builder().name("sample.realm").schemaVersion(1).migration(new RealmMigrations()).build();
         Realm.setDefaultConfiguration(configuration);
         Realm.getInstance(configuration);
     }

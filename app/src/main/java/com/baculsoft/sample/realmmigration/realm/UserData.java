@@ -15,9 +15,9 @@ public class UserData extends RealmObject {
 
     private String name;
     private int age;
-    private String gender;
+    //private String gender;
 
-    public String getGender() {
+    /*public String getGender() {
         return gender;
     }
 
@@ -26,13 +26,13 @@ public class UserData extends RealmObject {
     }
 
     public UserData() {
-    }
+    }*/
 
     public void fill(final User user) {
         setEmail(user.getEmail());
         setName(user.getName());
         setAge(user.getAge());
-        setGender("male");
+        //setGender("male");
     }
 
     public String getEmail() {

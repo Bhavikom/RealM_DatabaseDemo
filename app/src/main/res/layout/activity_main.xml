@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context="com.baculsoft.sample.realmmigration.views.MainActivity"
-                tools:targetApi="LOLLIPOP">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baculsoft.sample.realmmigration.views.MainActivity"
+    tools:targetApi="LOLLIPOP">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_main"
@@ -17,7 +17,7 @@
         app:theme="@style/AppTheme.Toolbar" />
 
     <EditText
-        android:id="@+id/et_main_email"
+        android:id="@+id/edittext_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar_main"
@@ -27,36 +27,58 @@
         android:padding="8dp" />
 
     <EditText
-        android:id="@+id/et_main_name"
+        android:id="@+id/edittext_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/et_main_email"
+        android:layout_below="@+id/edittext_email"
         android:layout_marginTop="8dp"
         android:hint="@string/hint_name"
         android:inputType="textEmailAddress"
         android:padding="8dp" />
 
     <EditText
-        android:id="@+id/et_main_age"
+        android:id="@+id/edittext_age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/et_main_name"
+        android:layout_below="@+id/edittext_name"
         android:layout_marginTop="8dp"
         android:hint="@string/hint_age"
         android:inputType="number"
         android:padding="8dp" />
 
-    <Button
-        android:id="@+id/btn_main"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:text="@string/btn_save"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="16sp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/btn_save"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_retrive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/retrive_from_database"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Update"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+    </LinearLayout>
 </RelativeLayout>

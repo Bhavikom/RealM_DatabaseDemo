@@ -3,5 +3,6 @@
     <string name="hint_email">Email Address</string>
     <string name="hint_name">Full Name</string>
     <string name="hint_age">Age</string>
-    <string name="btn_save">Save</string>
+    <string name="btn_save">Add to Database</string>
+    <string name="retrive_from_database">Retrieve from DB</string>
 </resources>
